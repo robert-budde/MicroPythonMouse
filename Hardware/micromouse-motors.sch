@@ -1,0 +1,156 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L tc4427:TC4427 U?
+U 1 1 5CBF5C67
+P 4750 3850
+F 0 "U?" H 4750 4222 60  0000 C CNN
+F 1 "TC4427" H 4750 4124 50  0000 C CNN
+F 2 "" H 4750 3850 60  0000 C CNN
+F 3 "" H 4750 3850 60  0000 C CNN
+	1    4750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5CBF5CC9
+P 5250 3150
+F 0 "#PWR?" H 5250 3000 50  0001 C CNN
+F 1 "+BATT" H 5265 3323 50  0000 C CNN
+F 2 "" H 5250 3150 50  0001 C CNN
+F 3 "" H 5250 3150 50  0001 C CNN
+	1    5250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CBF5CFC
+P 4750 3250
+F 0 "C?" V 4521 3250 50  0000 C CNN
+F 1 "100nF" V 4612 3250 50  0000 C CNN
+F 2 "" H 4750 3250 50  0001 C CNN
+F 3 "~" H 4750 3250 50  0001 C CNN
+	1    4750 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CBF5D5E
+P 3800 4150
+F 0 "R?" H 3859 4196 50  0000 L CNN
+F 1 "47k" H 3859 4105 50  0000 L CNN
+F 2 "" H 3800 4150 50  0001 C CNN
+F 3 "~" H 3800 4150 50  0001 C CNN
+	1    3800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CBF5DB4
+P 4050 4150
+F 0 "R?" H 4109 4196 50  0000 L CNN
+F 1 "47k" H 4109 4105 50  0000 L CNN
+F 2 "" H 4050 4150 50  0001 C CNN
+F 3 "~" H 4050 4150 50  0001 C CNN
+	1    4050 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CBF5E11
+P 4050 4350
+F 0 "#PWR?" H 4050 4100 50  0001 C CNN
+F 1 "GND" H 4055 4177 50  0000 C CNN
+F 2 "" H 4050 4350 50  0001 C CNN
+F 3 "" H 4050 4350 50  0001 C CNN
+	1    4050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3900 4400 3900
+Wire Wire Line
+	4050 4250 4050 4300
+Wire Wire Line
+	3800 4250 3800 4300
+Wire Wire Line
+	3800 4300 4050 4300
+Wire Wire Line
+	4050 4050 4050 4000
+Wire Wire Line
+	4050 4000 4400 4000
+Wire Wire Line
+	3800 4050 3800 3800
+Wire Wire Line
+	3800 3800 4400 3800
+NoConn ~ 4400 3700
+NoConn ~ 5100 3700
+Wire Wire Line
+	4300 3900 4300 3250
+Wire Wire Line
+	4300 3250 4650 3250
+Wire Wire Line
+	4850 3250 5250 3250
+Wire Wire Line
+	5250 3250 5250 3900
+Wire Wire Line
+	5250 3900 5100 3900
+Wire Wire Line
+	5250 3250 5250 3150
+Connection ~ 5250 3250
+NoConn ~ 4750 4150
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5CBF69E2
+P 4300 4350
+F 0 "#PWR?" H 4300 4150 50  0001 C CNN
+F 1 "GNDPWR" H 4304 4196 50  0000 C CNN
+F 2 "" H 4300 4300 50  0001 C CNN
+F 3 "" H 4300 4300 50  0001 C CNN
+	1    4300 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4350 4300 3900
+Connection ~ 4300 3900
+Wire Wire Line
+	4050 4350 4050 4300
+Connection ~ 4050 4300
+$Comp
+L Motor:Motor_DC M?
+U 1 1 5CBF7035
+P 7200 3800
+F 0 "M?" H 7358 3796 50  0000 L CNN
+F 1 "Motor_DC" H 7358 3705 50  0000 L CNN
+F 2 "" H 7200 3710 50  0001 C CNN
+F 3 "~" H 7200 3710 50  0001 C CNN
+	1    7200 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 3800 0    50   Input ~ 0
+PWM_LA
+Text GLabel 3600 4000 0    50   Input ~ 0
+PWM_LB
+Wire Wire Line
+	3600 4000 4050 4000
+Connection ~ 4050 4000
+Wire Wire Line
+	3600 3800 3800 3800
+Connection ~ 3800 3800
+Text GLabel 3600 5100 0    50   Input ~ 0
+PWM_RA
+Text GLabel 3600 5300 0    50   Input ~ 0
+PWM_RB
+$EndSCHEMATC
