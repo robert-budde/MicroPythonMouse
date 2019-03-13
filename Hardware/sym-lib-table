@@ -2,4 +2,5 @@
   (lib (name micromouse)(type Legacy)(uri ${KIPRJMOD}/micromouse.lib)(options "")(descr ""))
   (lib (name as5304)(type Legacy)(uri ${KIPRJMOD}/as5304.lib)(options "")(descr ""))
   (lib (name tc4427)(type Legacy)(uri ${KIPRJMOD}/tc4427.lib)(options "")(descr ""))
+  (lib (name ldl212)(type Legacy)(uri ${KIPRJMOD}/ldl212.lib)(options "")(descr ""))
 )

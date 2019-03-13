@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:micromouse-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -269,7 +270,7 @@ Wire Wire Line
 Connection ~ 3600 1850
 Wire Wire Line
 	3600 1850 3650 1850
-Text GLabel 5800 2950 2    50   Input ~ 0
+Text GLabel 5800 2950 2    50   BiDi ~ 0
 SWDIO
 Text GLabel 5800 3050 2    50   Input ~ 0
 SWCLK
@@ -294,9 +295,9 @@ Text GLabel 5800 2550 2    50   Input ~ 0
 USB_VBUS
 Text GLabel 5800 2650 2    50   Input ~ 0
 USB_ID
-Text GLabel 5800 2750 2    50   Input ~ 0
+Text GLabel 5800 2750 2    50   BiDi ~ 0
 USB_DM
-Text GLabel 5800 2850 2    50   Input ~ 0
+Text GLabel 5800 2850 2    50   BiDi ~ 0
 USB_DP
 Wire Wire Line
 	5450 2850 5800 2850
@@ -785,18 +786,18 @@ $EndSheet
 $Sheet
 S 9750 1600 1000 200 
 U 5CAF83BA
-F0 "MIcroMouse-IMU" 50
+F0 "MicroMouse-IMU" 50
 F1 "micromouse-imu.sch" 50
 $EndSheet
-Text GLabel 7450 1650 0    50   Input ~ 0
+Text GLabel 7300 1850 2    50   Output ~ 0
 IMU_MOSI
-Text GLabel 7450 1550 0    50   Input ~ 0
+Text GLabel 7300 1750 2    50   Output ~ 0
 IMU_SCLK
-Text GLabel 7450 1950 0    50   Input ~ 0
+Text GLabel 7300 2150 2    50   Input ~ 0
 IMU_MISO
-Text GLabel 7450 1850 0    50   Input ~ 0
+Text GLabel 7300 2050 2    50   Output ~ 0
 IMU_CS
-Text GLabel 7450 2050 0    50   Input ~ 0
+Text GLabel 7300 2250 2    50   Input ~ 0
 IMU_INT
 Text GLabel 6000 3750 2    50   Input ~ 0
 ENC_LA
@@ -829,18 +830,18 @@ Wire Wire Line
 Wire Wire Line
 	5450 3750 6000 3750
 $Sheet
-S 10000 2950 500  150 
+S 9750 2400 1000 200 
 U 5CBF5B75
 F0 "MicroMouse-Motors" 50
 F1 "micromouse-motors.sch" 50
 $EndSheet
-Text GLabel 3000 4250 0    50   Input ~ 0
+Text GLabel 3000 4250 0    50   Output ~ 0
 PWM_LA
-Text GLabel 3000 4150 0    50   Input ~ 0
+Text GLabel 3000 4150 0    50   Output ~ 0
 PWM_LB
-Text GLabel 3000 4450 0    50   Input ~ 0
+Text GLabel 3000 4450 0    50   Output ~ 0
 PWM_RA
-Text GLabel 3000 4350 0    50   Input ~ 0
+Text GLabel 3000 4350 0    50   Output ~ 0
 PWM_RB
 Text Notes 6500 4200 1    50   ~ 0
 alt.: TIM2&TIM5
@@ -860,4 +861,21 @@ Wire Wire Line
 	3000 4350 3650 4350
 Wire Wire Line
 	3650 4450 3000 4450
+$Sheet
+S 9750 2800 1000 200 
+U 5C8AD6BB
+F0 "MicroMouse-OpticalSensors" 50
+F1 "micromouse-opticalsensors.sch" 50
+$EndSheet
+$Comp
+L power:VDD #PWR?
+U 1 1 5C8B65F4
+P 9000 9050
+F 0 "#PWR?" H 9000 8900 50  0001 C CNN
+F 1 "VDD" H 9017 9223 50  0000 C CNN
+F 2 "" H 9000 9050 50  0001 C CNN
+F 3 "" H 9000 9050 50  0001 C CNN
+	1    9000 9050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

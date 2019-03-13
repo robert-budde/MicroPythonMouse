@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:micromouse-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -154,9 +155,9 @@ Wire Wire Line
 Connection ~ 6700 3050
 NoConn ~ 5150 3250
 NoConn ~ 5150 3050
-Text GLabel 3950 2650 0    50   Input ~ 0
+Text GLabel 3950 2650 0    50   Output ~ 0
 ENC_LA
-Text GLabel 3950 2850 0    50   Input ~ 0
+Text GLabel 3950 2850 0    50   Output ~ 0
 ENC_LB
 Wire Wire Line
 	5200 2650 5150 2650
@@ -301,9 +302,9 @@ Wire Wire Line
 Connection ~ 6700 4600
 NoConn ~ 5150 4800
 NoConn ~ 5150 4600
-Text GLabel 3950 4200 0    50   Input ~ 0
+Text GLabel 3950 4200 0    50   Output ~ 0
 ENC_RA
-Text GLabel 3950 4400 0    50   Input ~ 0
+Text GLabel 3950 4400 0    50   Output ~ 0
 ENC_RB
 $Comp
 L power:VDD #PWR?

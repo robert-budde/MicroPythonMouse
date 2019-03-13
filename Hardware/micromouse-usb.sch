@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:micromouse-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -48,13 +49,13 @@ F 3 " ~" H 6350 3400 50  0001 C CNN
 	1    6200 3450
 	-1   0    0    -1  
 $EndComp
-Text GLabel 5050 3250 0    50   Input ~ 0
+Text GLabel 5050 3250 0    50   Output ~ 0
 USB_VBUS
-Text GLabel 5050 3650 0    50   Input ~ 0
+Text GLabel 5050 3650 0    50   Output ~ 0
 USB_ID
-Text GLabel 5050 3550 0    50   Input ~ 0
+Text GLabel 5050 3550 0    50   BiDi ~ 0
 USB_DM
-Text GLabel 5050 3450 0    50   Input ~ 0
+Text GLabel 5050 3450 0    50   BiDi ~ 0
 USB_DP
 Wire Wire Line
 	5050 3250 5800 3250

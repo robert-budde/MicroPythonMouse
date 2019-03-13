@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:micromouse-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -293,7 +294,7 @@ NoConn ~ 6850 3750
 NoConn ~ 6850 3650
 NoConn ~ 6850 3550
 NoConn ~ 6850 3450
-Text GLabel 5150 3850 0    50   Input ~ 0
+Text GLabel 5150 3850 0    50   Output ~ 0
 IMU_MISO
 Wire Wire Line
 	5150 3850 5450 3850
@@ -370,7 +371,7 @@ IMU_CS
 Wire Wire Line
 	5150 3750 5450 3750
 NoConn ~ 5450 4150
-Text GLabel 5150 3950 0    50   Input ~ 0
+Text GLabel 5150 3950 0    50   Output ~ 0
 IMU_INT
 Wire Wire Line
 	5150 3950 5450 3950

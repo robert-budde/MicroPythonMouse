@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:micromouse-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -26,11 +27,11 @@ F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex
 	1    5650 3950
 	-1   0    0    -1  
 $EndComp
-Text GLabel 4850 3850 0    50   Input ~ 0
+Text GLabel 4850 3850 0    50   Output ~ 0
 SWCLK
-Text GLabel 4850 3950 0    50   Input ~ 0
+Text GLabel 4850 3950 0    50   BiDi ~ 0
 SWDIO
-Text GLabel 4850 3650 0    50   Input ~ 0
+Text GLabel 4850 3650 0    50   Output ~ 0
 NRST
 $Comp
 L power:GND #PWR?
