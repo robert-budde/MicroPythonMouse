@@ -1,6 +1,5 @@
 (sym_lib_table
-  (lib (name micromouse)(type Legacy)(uri "C:/Users/Robert/Documents/Elektronik/Hard- und Software-Projekte/Various_Projects/trunk/Micromouse/micromouse/micromouse.lib")(options "")(descr ""))
-  (lib (name as5304)(type Legacy)(uri "C:/Users/Robert/Documents/Elektronik/Hard- und Software-Projekte/Various_Projects/trunk/Micromouse/micromouse/as5304.lib")(options "")(descr ""))
-  (lib (name tc4427)(type Legacy)(uri "C:/Users/Robert/Documents/Elektronik/Hard- und Software-Projekte/Various_Projects/trunk/Micromouse/micromouse/tc4427.lib")(options "")(descr ""))
-  (lib (name SSD1306_OLED-0.91-128x32)(type Legacy)(uri "C:/Users/Robert/Documents/Elektronik/Hard- und Software-Projekte/Various_Projects/trunk/Micromouse/micromouse/SSD1306_OLED-0.91-128x32.lib")(options "")(descr ""))
+  (lib (name micromouse)(type Legacy)(uri ${KIPRJMOD}/micromouse.lib)(options "")(descr ""))
+  (lib (name as5304)(type Legacy)(uri ${KIPRJMOD}/as5304.lib)(options "")(descr ""))
+  (lib (name tc4427)(type Legacy)(uri ${KIPRJMOD}/tc4427.lib)(options "")(descr ""))
 )
