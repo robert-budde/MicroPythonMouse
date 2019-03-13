@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 6 8
 Title ""
 Date ""
 Rev ""
@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L tc4427:TC4427 U?
-U 1 1 5CBF5C67
-P 4750 3850
-F 0 "U?" H 4750 4222 60  0000 C CNN
-F 1 "TC4427" H 4750 4124 50  0000 C CNN
-F 2 "" H 4750 3850 60  0000 C CNN
-F 3 "" H 4750 3850 60  0000 C CNN
-	1    4750 3850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+BATT #PWR?
 U 1 1 5CBF5CC9
@@ -96,8 +85,6 @@ Wire Wire Line
 	3800 4050 3800 3800
 Wire Wire Line
 	3800 3800 4400 3800
-NoConn ~ 4400 3700
-NoConn ~ 5100 3700
 Wire Wire Line
 	4300 3900 4300 3250
 Wire Wire Line
@@ -111,7 +98,6 @@ Wire Wire Line
 Wire Wire Line
 	5250 3250 5250 3150
 Connection ~ 5250 3250
-NoConn ~ 4750 4150
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 5CBF69E2
@@ -154,4 +140,6 @@ Text GLabel 3600 5100 0    50   Input ~ 0
 PWM_RA
 Text GLabel 3600 5300 0    50   Input ~ 0
 PWM_RB
+Text Notes 4650 3850 0    50   ~ 0
+DRV8873
 $EndSCHEMATC

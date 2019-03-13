@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -49,16 +49,12 @@ F 3 " ~" H 6350 3400 50  0001 C CNN
 	1    6200 3450
 	-1   0    0    -1  
 $EndComp
-Text GLabel 5050 3250 0    50   Output ~ 0
-USB_VBUS
 Text GLabel 5050 3650 0    50   Output ~ 0
 USB_ID
 Text GLabel 5050 3550 0    50   BiDi ~ 0
 USB_DM
 Text GLabel 5050 3450 0    50   BiDi ~ 0
 USB_DP
-Wire Wire Line
-	5050 3250 5800 3250
 Wire Wire Line
 	5900 3650 5400 3650
 Wire Wire Line
@@ -107,4 +103,17 @@ Wire Wire Line
 Wire Wire Line
 	6300 3900 6300 3850
 Connection ~ 6250 3900
+$Comp
+L power:VBUS #PWR?
+U 1 1 5C8B0F04
+P 5800 3100
+F 0 "#PWR?" H 5800 2950 50  0001 C CNN
+F 1 "VBUS" H 5815 3273 50  0000 C CNN
+F 2 "" H 5800 3100 50  0001 C CNN
+F 3 "" H 5800 3100 50  0001 C CNN
+	1    5800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3100 5800 3250
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -291,8 +291,6 @@ F 3 "~" H 5600 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5450 2550 5500 2550
-Text GLabel 5800 2550 2    50   Input ~ 0
-USB_VBUS
 Text GLabel 5800 2650 2    50   Input ~ 0
 USB_ID
 Text GLabel 5800 2750 2    50   BiDi ~ 0
@@ -306,7 +304,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 2650 5800 2650
 Wire Wire Line
-	5800 2550 5700 2550
+	5900 2550 5700 2550
 $Comp
 L power:VDDA #PWR014
 U 1 1 5C7F4E47
@@ -772,19 +770,19 @@ Connection ~ 3500 1450
 Wire Wire Line
 	3500 1450 3500 1650
 $Sheet
-S 9750 750  1000 200 
+S 9750 3200 500  150 
 U 5C924FF5
 F0 "MicroMouse-USB" 50
 F1 "micromouse-usb.sch" 50
 $EndSheet
 $Sheet
-S 9750 1200 1000 200 
+S 9750 1200 500  150 
 U 5C92AF24
 F0 "MicroMouse-Debugging" 50
 F1 "micromouse-debugging.sch" 50
 $EndSheet
 $Sheet
-S 9750 1600 1000 200 
+S 9750 1600 500  150 
 U 5CAF83BA
 F0 "MicroMouse-IMU" 50
 F1 "micromouse-imu.sch" 50
@@ -804,7 +802,7 @@ ENC_LA
 Text GLabel 6000 3850 2    50   Input ~ 0
 ENC_LB
 $Sheet
-S 9750 2000 1000 200 
+S 9750 2000 500  150 
 U 5CBCE166
 F0 "MicroMouse-Encoders" 50
 F1 "micromouse-encoders.sch" 50
@@ -830,7 +828,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 3750 6000 3750
 $Sheet
-S 9750 2400 1000 200 
+S 9750 2400 500  150 
 U 5CBF5B75
 F0 "MicroMouse-Motors" 50
 F1 "micromouse-motors.sch" 50
@@ -862,7 +860,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 4450 3000 4450
 $Sheet
-S 9750 2800 1000 200 
+S 9750 2800 500  150 
 U 5C8AD6BB
 F0 "MicroMouse-OpticalSensors" 50
 F1 "micromouse-opticalsensors.sch" 50
@@ -878,4 +876,37 @@ F 3 "" H 9000 9050 50  0001 C CNN
 	1    9000 9050
 	1    0    0    -1  
 $EndComp
+Text GLabel 7200 4400 2    50   Input ~ 0
+RECEIVER_LF
+Text GLabel 7200 4500 2    50   Input ~ 0
+RECEIVER_L
+Text GLabel 7200 4600 2    50   Input ~ 0
+RECEIVER_R
+Text GLabel 7200 4700 2    50   Input ~ 0
+RECEIVER_RF
+Text GLabel 7200 4000 2    50   Output ~ 0
+EMITTER_LF
+Text GLabel 7200 4100 2    50   Output ~ 0
+EMITTER_DIAG
+Text GLabel 7200 4200 2    50   Output ~ 0
+EMITTER_RF
+$Sheet
+S 9750 800  500  150 
+U 5C8B0761
+F0 "MicroMouse-Power" 50
+F1 "micromouse-power.sch" 50
+$EndSheet
+$Comp
+L power:VBUS #PWR?
+U 1 1 5C8B6706
+P 5900 2450
+F 0 "#PWR?" H 5900 2300 50  0001 C CNN
+F 1 "VBUS" H 5915 2623 50  0000 C CNN
+F 2 "" H 5900 2450 50  0001 C CNN
+F 3 "" H 5900 2450 50  0001 C CNN
+	1    5900 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2550 5900 2450
 $EndSCHEMATC

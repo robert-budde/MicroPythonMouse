@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -386,17 +386,6 @@ F 3 "~" H 2950 3850 50  0001 C CNN
 	1    2950 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C8B70E6
-P 2950 4050
-F 0 "#PWR?" H 2950 3800 50  0001 C CNN
-F 1 "GND" H 2955 3877 50  0000 C CNN
-F 2 "" H 2950 4050 50  0001 C CNN
-F 3 "" H 2950 4050 50  0001 C CNN
-	1    2950 4050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2950 4050 2950 4000
 Wire Wire Line
@@ -441,17 +430,6 @@ F 1 "1800" H 4620 3805 50  0000 L CNN
 F 2 "" V 4480 3850 50  0001 C CNN
 F 3 "~" H 4550 3850 50  0001 C CNN
 	1    4550 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C8BA1AA
-P 4550 4050
-F 0 "#PWR?" H 4550 3800 50  0001 C CNN
-F 1 "GND" H 4555 3877 50  0000 C CNN
-F 2 "" H 4550 4050 50  0001 C CNN
-F 3 "" H 4550 4050 50  0001 C CNN
-	1    4550 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -500,17 +478,6 @@ F 3 "~" H 6150 3850 50  0001 C CNN
 	1    6150 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C8BB164
-P 6150 4050
-F 0 "#PWR?" H 6150 3800 50  0001 C CNN
-F 1 "GND" H 6155 3877 50  0000 C CNN
-F 2 "" H 6150 4050 50  0001 C CNN
-F 3 "" H 6150 4050 50  0001 C CNN
-	1    6150 4050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6150 4050 6150 4000
 Wire Wire Line
@@ -557,17 +524,6 @@ F 3 "~" H 7750 3850 50  0001 C CNN
 	1    7750 3850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C8BB183
-P 7750 4050
-F 0 "#PWR?" H 7750 3800 50  0001 C CNN
-F 1 "GND" H 7755 3877 50  0000 C CNN
-F 2 "" H 7750 4050 50  0001 C CNN
-F 3 "" H 7750 4050 50  0001 C CNN
-	1    7750 4050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7750 4050 7750 4000
 Wire Wire Line
@@ -577,4 +533,48 @@ Wire Wire Line
 Connection ~ 7750 3650
 Wire Wire Line
 	7750 3650 7750 3600
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C89B1C4
+P 2950 4050
+F 0 "#PWR?" H 2950 3800 50  0001 C CNN
+F 1 "GNDA" H 2955 3877 50  0000 C CNN
+F 2 "" H 2950 4050 50  0001 C CNN
+F 3 "" H 2950 4050 50  0001 C CNN
+	1    2950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C89EB37
+P 4550 4050
+F 0 "#PWR?" H 4550 3800 50  0001 C CNN
+F 1 "GNDA" H 4555 3877 50  0000 C CNN
+F 2 "" H 4550 4050 50  0001 C CNN
+F 3 "" H 4550 4050 50  0001 C CNN
+	1    4550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C89EB78
+P 6150 4050
+F 0 "#PWR?" H 6150 3800 50  0001 C CNN
+F 1 "GNDA" H 6155 3877 50  0000 C CNN
+F 2 "" H 6150 4050 50  0001 C CNN
+F 3 "" H 6150 4050 50  0001 C CNN
+	1    6150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C89EBB9
+P 7750 4050
+F 0 "#PWR?" H 7750 3800 50  0001 C CNN
+F 1 "GNDA" H 7755 3877 50  0000 C CNN
+F 2 "" H 7750 4050 50  0001 C CNN
+F 3 "" H 7750 4050 50  0001 C CNN
+	1    7750 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

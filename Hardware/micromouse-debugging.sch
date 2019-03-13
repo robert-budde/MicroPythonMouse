@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -63,21 +63,19 @@ Wire Wire Line
 	4850 3850 5150 3850
 Wire Wire Line
 	5150 3650 4850 3650
+Wire Wire Line
+	5650 3300 5650 3350
+NoConn ~ 5150 4050
+NoConn ~ 5150 4150
 $Comp
-L power:+3.3V #PWR?
-U 1 1 5C9344F3
+L power:VDD #PWR?
+U 1 1 5C8C2900
 P 5650 3300
-AR Path="/5C9344F3" Ref="#PWR?"  Part="1" 
-AR Path="/5C92AF24/5C9344F3" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 5650 3150 50  0001 C CNN
-F 1 "+3.3V" H 5665 3473 50  0000 C CNN
+F 1 "VDD" H 5667 3473 50  0000 C CNN
 F 2 "" H 5650 3300 50  0001 C CNN
 F 3 "" H 5650 3300 50  0001 C CNN
 	1    5650 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5650 3300 5650 3350
-NoConn ~ 5150 4050
-NoConn ~ 5150 4150
 $EndSCHEMATC
