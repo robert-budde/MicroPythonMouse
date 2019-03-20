@@ -1,0 +1,3 @@
+[submodule "Software/micropython"]
+	path = Software/micropython
+	url = https://github.com/robert-budde/micropython.git
