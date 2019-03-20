@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -909,4 +909,14 @@ F 3 "" H 5900 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 2550 5900 2450
+$Sheet
+S 9750 3600 500  150 
+U 5C9073AE
+F0 "MicroMouse-Display" 50
+F1 "micromouse-display.sch" 50
+$EndSheet
+Text GLabel 7300 2600 2    50   Output ~ 0
+OLED_SCL
+Text GLabel 7300 2700 2    50   BiDi ~ 0
+OLED_SDA
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J?
+L micromouse-rescue:Conn_ARM_JTAG_SWD_10-Connector-micromouse-rescue J?
 U 1 1 5C9344DA
 P 5650 3950
 AR Path="/5C9344DA" Ref="J?"  Part="1" 

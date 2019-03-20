@@ -3,4 +3,6 @@
   (lib (name as5304)(type Legacy)(uri ${KIPRJMOD}/as5304.lib)(options "")(descr ""))
   (lib (name tc4427)(type Legacy)(uri ${KIPRJMOD}/tc4427.lib)(options "")(descr ""))
   (lib (name ldl212)(type Legacy)(uri ${KIPRJMOD}/ldl212.lib)(options "")(descr ""))
+  (lib (name micromouse-rescue)(type Legacy)(uri ${KIPRJMOD}/micromouse-rescue.lib)(options "")(descr ""))
+  (lib (name ssd1306)(type Legacy)(uri /home/raphael/projects/micromouse/MicroPythonMouse/Hardware/ssd1306.lib)(options "")(descr ""))
 )
