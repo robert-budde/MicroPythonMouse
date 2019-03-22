@@ -3,15 +3,15 @@ use <futura_parts_wheel.scad>;
 fudge = 0.01;
 
 gear_length = 9.0;
-gear_width = 12.0;
-gear_height = 10.0;
-gear_roundness = 0.5;
+gear_width = 12.0+0.1;
+gear_height = 10.0+0.1;
+gear_roundness = 0.5+0.1;
 
-pcb_width = 390*0.0254;
+pcb_width = 390*0.0254+0.2;
 pcb_width2 = 1000*0.0254;
 pcb_length = 3000*0.0254;
 pcb_length2 = 650*0.0254;
-pcb_height = 1.6;
+pcb_height = 1.6+0.2;
 
 $fn = 120;
 
@@ -63,10 +63,10 @@ difference()
             }
             translate([fudge,-50/2,-100/2]) cube([fudge,50,100]);
         }
-        rotate([0,90,0]) cylinder(d=2,h=7-fudge);
+        rotate([0,90,0]) cylinder(d=3,h=7-fudge);
     }
     gearbox();
     tbma();
     translate([0,-5/2,-14-pcb_height]) cube([10,5,14]);
-    translate([7/2,50,-9]) rotate([90,0,0]) cylinder(d=3,h=100);
+    translate([7/2,50,-9.5]) rotate([90,0,0]) cylinder(d=3,h=100);
 }
