@@ -1,8 +1,5 @@
 from pyb import Pin, Timer
-
-#p_out = Pin('A0', Pin.OUT_PP)
-#p_out.high()
-#p_out.low()
+from machine import SPI
 
 pin_phase = Pin('D37', Pin.OUT_PP);
 pin_phase.low();
@@ -24,6 +21,39 @@ ref = tim3.channel(3, Timer.PWM, pin=pin_ref);
 ref.pulse_width_percent(100); # no pwm current control yet
 
 pin_stby.high();
+pin_stby.low();
 pin_en_fault.value(True);
 
-pwm.pulse_width_percent(20);
+pwm.pulse_width_percent(10);
+
+# MPS MA702
+pin_cs = Pin('D10', Pin.OUT_PP);
+pin_cs.high();
+
+pin_mosi = Pin('D11', Pin.AF_PP)
+#pin_miso = Pin('D12', Pin.AF)
+pin_sck = Pin('D13', Pin.AF_PP)
+spi = SPI('A', baudrate=1000000, polarity=1, phase=0, bits=16);
+
+pin_cs.low();
+lsb = spi.read(1);
+msb = spi.read(1);
+print(msb[0]*256+lsb[0])
+pin_cs.high();
+
+pin_cs.low();
+buf = bytearray(2)
+rx = spi.write_readinto(b'00', buf)
+print(rx)
+pin_cs.high();
+
+pin_cs.low();
+buf = bytearray(2)
+rx = spi.readinto(buf)
+print(rx)
+pin_cs.high();
+
+int.from_bytes(rx, byteorder='big', signed=False)
+struct.unpack('>H', rx)
+
+machine.reset()
